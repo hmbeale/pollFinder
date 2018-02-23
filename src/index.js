@@ -20,8 +20,8 @@ function showPosition(position) {
   long = position.coords.longitude;
 
     x.textContent = `You are  ${Math.round ((33.995446 - lat)*100)/100 } degrees
-    latitude and ${Math.round((81.020728 - long)*100)/100} degrees longitude
-    away from the ward 1 polling location in richland county`;
+    latitude and ${Math.round((-81.020728 - long)*100)/100} degrees longitude
+    away from the Ward 1 polling location in Richland County.`;
 
 
     console.log (lat);
@@ -34,9 +34,10 @@ getLocation();
 // there are dozens for every county
 //lat 33.995446
 //long 81.020728
-
+/*
 const PRECINCTS = {
   ward: "Ward 1", location: "Lourie Senior Ctr", address:
   "1650 Park Cir Columbia SC 29201"
 
 }
+*/
